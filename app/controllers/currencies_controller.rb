@@ -1,6 +1,6 @@
-class CurrencyController < ApplicationController
+class CurrenciesController < ApplicationController
 
-  def currency
+  def index
 
   end
 

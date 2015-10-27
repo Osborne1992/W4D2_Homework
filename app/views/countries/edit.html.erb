@@ -1,36 +1,38 @@
 <br>
 <%= form_for @country do |f| %>
-<%= f.label :name, "Country Name: " %>
-<%= f.text_field :name %>
+<%= f.label :name, "Country Name:", class: "formleft" %>
+<%= f.text_field :name, class: "formright" %>
 <br>
 <br>
-<%= f.label :flag_image %>
-<%= f.text_field :flag_image %>
+<%= f.label :flag_image, "Country Flag (URL):", class: "formleft" %>
+<%= f.text_field :flag_image, class: "formright" %>
 <br>
 <br>
-<%= f.label :size %>
-<%= f.number_field :size %>
+<%= f.label :size, "Land Size:", class: "formleft" %>
+<%= f.number_field :size, class: "formright" %>
 <br>
 <br>
-<%= f.label :population %>
-<%= f.number_field :population %>
+<%= f.label :population, "Country Population:", class: "formleft" %>
+<%= f.number_field :population, class: "formright" %>
 <br>
 <br>
-<%= f.label :language %>
-<%= f.text_field :language %>
+<%= f.label :language, "Spoken Language:", class: "formleft" %>
+<%= f.text_field :language, class: "formright" %>
 <br>
 <br>
-<%= f.label :national_anthem %>
-<%= f.text_field :national_anthem %>
+<%= f.label :national_anthem, "Country National Anthem:", class: "formleft" %>
+<%= f.text_field :national_anthem, class: "formright" %>
 <br>
 <br>
-<%= f.label :currency %>
-<%= f.text_field :currency %>
+<%= f.label :currency, "Currency Used:", class: "formleft" %>
+<%= f.text_field :currency, class: "formright" %>
 <br>
 <br>
-<%= f.label :demonym %>
-<%= f.text_field :demonym %>
+<%= f.label :demonym, "Demonym (Name Used):", class: "formleft" %>
+<%= f.text_field :demonym, class: "formright" %>
 <br>
 <br>
-<%= f.submit 'Update Country' %>
+<center>
+  <%= f.submit 'Update Country', class: "bueton" %>
+</center>
 <% end %>
