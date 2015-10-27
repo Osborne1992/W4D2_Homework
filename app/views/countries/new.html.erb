@@ -16,6 +16,10 @@
 <%= f.number_field :population, class: "formright" %>
 <br>
 <br>
+<%= f.label :demonym, "Demonym (Name Used):", class: "formleft" %>
+<%= f.text_field :demonym, class: "formright" %>
+<br>
+<br>
 <%= f.label :language, "Spoken Language:", class: "formleft" %>
 <%= f.text_field :language, class: "formright" %>
 <br>
@@ -25,11 +29,7 @@
 <br>
 <br>
 <%= f.label :currency, "Currency Used:", class: "formleft" %>
-<%= f.select_tag(:currency, '<option value="1">USDollar ($)</option><option value="2">Euro (€)</option><option value="3">Yen (¥)</option><option value="4">Pound (£)</option><option value="5">AUDollar ($)</option><option value="6">Franc (Fr)</option><option value="7">Canadian Dollar ($)</option><option value="8">Peso ($)</option><option value="9">Yuan (¥)</option><option value="10">NZDollar ($)</option><option value="11">Krona (kr)</option><option value="12">Ruble (₽)</option><option value="13">HKDollar ($)</option><option value="14">Krone (kr)</option><option value="15">Singapore Dollar ($)</option><option value="16">Lira (₺)</option><option value="17">Won (₩)</option><option value="18">Rand (R)</option><option value="19">Real (R$)</option><option value="20">Rupee (₹)</option>', class: "formright") %>
-<br>
-<br>
-<%= f.label :demonym, "Demonym (Name Used):", class: "formleft" %>
-<%= f.text_field :demonym, class: "formright" %>
+<%= f.select :currency, '<option value="1">USDollar ($)</option><option value="2">Euro (€)</option><option value="3">Yen (¥)</option><option value="4">Pound (£)</option><option value="5">AUDollar ($)</option><option value="6">Franc (Fr)</option><option value="7">Canadian Dollar ($)</option><option value="8">Peso ($)</option><option value="9">Yuan (¥)</option><option value="10">NZDollar ($)</option><option value="11">Krona (kr)</option><option value="12">Ruble (₽)</option><option value="13">HKDollar ($)</option><option value="14">Krone (kr)</option><option value="15">Singapore Dollar ($)</option><option value="16">Lira (₺)</option><option value="17">Won (₩)</option><option value="18">Rand (R)</option><option value="19">Real (R$)</option><option value="20">Rupee (₹)</option>'.html_safe, class: "formright" %>
 <br>
 <br>
 <center>

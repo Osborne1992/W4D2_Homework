@@ -8,7 +8,7 @@
 </center>
 <br>
 <br>
-<p><%= @country.name %> has a population of <%= @country.population %>, known as <%= @country.demonym %> who are spread across <%= @country.size %> square km of land.</p>
-<p>In <%= @country.name %> the most used language is <%= @country.language %> and the currency used is <%= @country.currency %>.</p>
+<p><%= @country.name %> has a population of <%= @country.population %>, known as <%= @country.demonym %> who are spread across <%= @country.size %> km2 of land.</p>
+<p>In <%= @country.name %> the most used language is <%= @country.language %> and the currency used is the <%= @country.currency %>.</p>
 <p>The national anthem of <%= @country.name %> can be heard here:</p>
 <center><%= audio_tag(@country.national_anthem, autoplay: false, controls: true) %>

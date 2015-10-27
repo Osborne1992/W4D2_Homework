@@ -16,6 +16,10 @@
 <%= f.number_field :population, class: "formright" %>
 <br>
 <br>
+<%= f.label :demonym, "Demonym (Name Used):", class: "formleft" %>
+<%= f.text_field :demonym, class: "formright" %>
+<br>
+<br>
 <%= f.label :language, "Spoken Language:", class: "formleft" %>
 <%= f.text_field :language, class: "formright" %>
 <br>
@@ -25,11 +29,7 @@
 <br>
 <br>
 <%= f.label :currency, "Currency Used:", class: "formleft" %>
-<%= f.text_field :currency, class: "formright" %>
-<br>
-<br>
-<%= f.label :demonym, "Demonym (Name Used):", class: "formleft" %>
-<%= f.text_field :demonym, class: "formright" %>
+<%= f.select :currency, '<option>USDollar ($)</option><option>Euro (€)</option><option>Yen (¥)</option><option>Pound (£)</option><option>AUDollar ($)</option><option>Franc (Fr)</option><option>Canadian Dollar ($)</option><option>Peso ($)</option><option>Yuan (¥)</option><option">NZDollar ($)</option><option">Krona (kr)</option><option">Ruble (₽)</option><option">HKDollar ($)</option><option">Krone (kr)</option><option">Singapore Dollar ($)</option><option">Lira (₺)</option><option">Won (₩)</option><option">Rand (R)</option><option">Real (R$)</option><option">Rupee (₹)</option>'.html_safe, class: "formright" %>
 <br>
 <br>
 <center>
