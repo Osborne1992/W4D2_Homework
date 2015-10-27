@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   resources :countries
+  resources :currencies
   root 'countries#index'
 end
   # The priority is based upon order of creation: first created -> highest priority.
