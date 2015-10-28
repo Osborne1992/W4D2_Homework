@@ -29,6 +29,16 @@ li a {
   padding: 5px;
 }
 
+.navbueton {
+  text-decoration: none;
+  color: #FFFFFF;
+  border: 1px #FFFFFF solid;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 15px;
+  background: transparent;
+}
+
 .bueton {
   background-color: #0000FF;
   color: #FFFFFF;
