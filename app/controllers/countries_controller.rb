@@ -2,7 +2,7 @@ class CountriesController < ApplicationController
 
   def index
     if params[:name]
-      @countries = Country.where("name like ?", "%#{params[:name]}%")
+      @countries = Country.where("name ilike ?", "%#{params[:name]}%", )
     else
       @countries = Country.all.order(:name)
     end
