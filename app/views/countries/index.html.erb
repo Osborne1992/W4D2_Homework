@@ -1,11 +1,7 @@
 <center>
   <br>
-  <% @countries.each do |country| %>
-
-  <h3>
-    <%= link_to("Want to know about #{country.name}", country_path(country)) %>
-  </h3>
   <br>
-
-  <% end %>
+  <h2>Countries List</h2>
+  <br>
+  <%= render @countries %>
 </center>

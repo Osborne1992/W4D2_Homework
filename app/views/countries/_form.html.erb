@@ -1,0 +1,37 @@
+<%= form_for @country do |f| %>
+<%= f.label :name, "Country Name:", class: "formleft" %>
+<%= f.text_field :name, class: "formright" %>
+<br>
+<br>
+<%= f.label :flag_image, "Country Flag (URL):", class: "formleft" %>
+<%= f.text_field :flag_image, class: "formright" %>
+<br>
+<br>
+<%= f.label :size, "Land Size:", class: "formleft" %>
+<%= f.number_field :size, class: "formright" %>
+<br>
+<br>
+<%= f.label :population, "Country Population:", class: "formleft" %>
+<%= f.number_field :population, class: "formright" %>
+<br>
+<br>
+<%= f.label :demonym, "Demonym (Name Used):", class: "formleft" %>
+<%= f.text_field :demonym, class: "formright" %>
+<br>
+<br>
+<%= f.label :language, "Spoken Language:", class: "formleft" %>
+<%= f.text_field :language, class: "formright" %>
+<br>
+<br>
+<%= f.label :national_anthem, "Country National Anthem:", class: "formleft" %>
+<%= f.text_field :national_anthem, class: "formright" %>
+<br>
+<br>
+<%= f.label :currency, "Currency Used:", class: "formleft" %>
+<%= f.select :currency, ['USDollar ($)','Euro (€)','Yen (¥)','Pound (£)','AUDollar ($)','Franc (Fr)','Canadian Dollar ($)','Peso ($)','Yuan (¥)','NZDollar ($)','Krona (kr)','Ruble (₽)','HKDollar ($)','Krone (kr)','Singapore Dollar ($)','Lira (₺)','Won (₩)','Rand (R)','Real (R$)','Rupee (₹)'], class: "formright" %>
+<br>
+<br>
+<center>
+  <%= f.submit button_text, class: "bueton" %>
+</center>
+<% end %>
