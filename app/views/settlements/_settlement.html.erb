@@ -1,0 +1,7 @@
+<center>
+  <h3>
+    Settlements within <%= link_to(settlement.country.try(:name), country_path(settlement.country.id)) %>
+  </h3>
+</center>
+<p>Consisting of the <%= settlement.kind %>, <%= settlement.name %></p>
+<br>

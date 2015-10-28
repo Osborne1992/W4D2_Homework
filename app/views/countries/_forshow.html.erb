@@ -1,4 +1,4 @@
-<%= link_to("back...", countries_path, class: "bueton") %> <%= link_to("edit...", edit_country_path(@country), class: "bueton") %> <%= button_to('delete...', country_path(@country), method: :delete, class: 'bueton', data:{confirm: 'Confirm Delete'}) %>
+<%= link_to("Back to Countries", countries_path, class: "bueton") %> <%= link_to("Edit Country", edit_country_path(@country), class: "bueton") %> <%= button_to('Delete Country', country_path(@country), method: :delete, class: 'bueton', data:{confirm: 'Deleting @country.name - Confirm'}) %>
 <br>
   <h2><%= @country.name %></h2>
 <br>

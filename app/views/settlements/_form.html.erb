@@ -1,0 +1,17 @@
+<%= form_for @settlement do |f| %>
+<%= f.label :country_id, "In The Country:", class: "formleft" %>
+<%= f.select :country_id, Country.all.map { |c| [c.name, c.id] }, class: "formright" %>
+<br>
+<br>
+<%= f.label :name, "Settlement Name:", class: "formleft" %>
+<%= f.text_field :name, class: "formright" %>
+<br>
+<br>
+<%= f.label :kind, "Land Size:", class: "formleft" %>
+<%= f.select :kind, %w(Hamlet Village Town City Metropolis), class: "formright" %>
+<br>
+<br>
+<center>
+  <%= f.submit button_text, class: "bueton" %>
+</center>
+<% end %>
