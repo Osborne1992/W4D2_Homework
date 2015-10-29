@@ -40,13 +40,13 @@ li a {
 }
 
 .bueton {
-  background-color: #0000FF;
-  color: #FFFFFF;
+  background-color: transparent;
+  color: #0000FF;
   padding: 5px;
+  border: 1px #0000FF solid;
   border-radius: 5px;
   font-size: 14px;
   display: inline;
-  border: none;
 }
 
 .flagfield {

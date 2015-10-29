@@ -3,5 +3,5 @@
     Settlements within <%= link_to(settlement.country.try(:name), country_path(settlement.country.id)) %>
   </h3>
 </center>
-<p>Settlements include: <%= @country.settlements.map { |s| s.name + ", a " + s.kind } %> <%= link_to(image_tag('https://image.freepik.com/free-icon/edit-interface-symbol_318-61460.jpg', size: "15x15"), edit_settlement_path(settlement)) %></p>
+<p>Settlements include: <%= @country.settlements.map { |s| s.name + ", a " + s.kind + link_to(image_tag('https://image.freepik.com/free-icon/edit-interface-symbol_318-61460.jpg', size: "15x15"), edit_settlement_path(settlement)) } %></p>
 <br>
